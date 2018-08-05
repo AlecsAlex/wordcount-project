@@ -1,0 +1,16 @@
+<h1>Sunt {{count}} cuvinte in texul tau</h1>
+
+<a href="{%url 'home'%}">Start again</a>
+
+<h1>textul introdus:</h1>
+{{fulltext}}
+
+
+<h1>Word count:</h1>
+
+{% for a, b in worddictionary%}
+
+{{a}} - {{b}}
+<br />
+
+{%endfor%}
